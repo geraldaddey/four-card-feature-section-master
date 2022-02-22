@@ -7,6 +7,82 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background: rgb(230, 224, 224);
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.head {
+  padding: 50px;
+  text-align: center;
+}
+
+.head span {
+  display: block;
+}
+
+.head span:first-of-type {
+  font-weight: 200;
+  font-size: 2rem;
+}
+
+.head span:nth-child(2) {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.head span:last-child {
+  font-weight: 100;
+  font-size: -2rem;
+}
+
+.row {
+  display: flex;
+  gap: 50px;
+
+  align-items: center;
+}
+
+.supervisor {
+  border-top: 2px solid green;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+}
+.calculator {
+  border-top: 2px solid green;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+  gap: 20px;
+}
+
+.team-builder {
+  border-top: 2px solid green;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+}
+.karma {
+  border-top: 2px solid green;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  text-align: center;
 }
 
 .attribution {
