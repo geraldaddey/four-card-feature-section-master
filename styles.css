@@ -3,12 +3,22 @@
   --cyan: hsl(180, 62%, 55%);
   --orange: hsl(34, 97%, 64%);
   --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-lioght-gray: hsl(0, 0%, 98%);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 15px;
   background: rgb(230, 224, 224);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--very-lioght-gray);
 }
 
 .container {
@@ -35,6 +45,7 @@ body {
 .head span:nth-child(2) {
   font-weight: 600;
   font-size: 3rem;
+  color: var(--very-dark-blue);
 }
 
 .head span:last-child {
@@ -51,7 +62,7 @@ body {
 
 /* Supervisor box  */
 .supervisor {
-  border-top: 2px solid green;
+  border-top: 4px solid green;
   width: 300px;
   height: 200px;
   background-color: white;
@@ -59,6 +70,17 @@ body {
   padding: 20px;
   border-radius: 5px;
   text-align: left;
+  position: relative;
+  -webkit-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  -moz-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  box-shadow: 0px 40px 32px -24px var(--grayish-blue);
+}
+
+.supervisor img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
 }
 
 .supervisor span {
@@ -73,13 +95,24 @@ body {
 /* Calculator box  */
 
 .calculator {
-  border-top: 2px solid blue;
+  border-top: 4px solid blue;
   width: 300px;
   height: 200px;
   background-color: white;
   border-radius: 5px;
   padding: 20px;
   text-align: left;
+  position: relative;
+  -webkit-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  -moz-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  box-shadow: 0px 40px 32px -24px var(--grayish-blue);
+}
+
+.calculator img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
 }
 
 .calculator span {
@@ -93,13 +126,13 @@ body {
 .column {
   display: flex;
   flex-flow: column;
-  gap: 20px;
+  gap: 40px;
 }
 
 /* Team builder box  */
 
 .team-builder {
-  border-top: 2px solid red;
+  border-top: 4px solid red;
   width: 300px;
   height: 200px;
   background-color: white;
@@ -107,12 +140,17 @@ body {
   padding: 20px;
   text-align: left;
   border-radius: 5px;
+  position: relative;
+  -webkit-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  -moz-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  box-shadow: 0px 40px 32px -24px var(--grayish-blue);
 }
 
 .team-builder img {
-  position: relative;
-  left: 70%;
-  top: 20%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
 }
 
 .team-builder span {
@@ -126,14 +164,23 @@ body {
 
 /* Karma box  */
 .karma {
-  border-top: 2px solid orange;
+  border-top: 4px solid orange;
   width: 300px;
   height: 200px;
   background-color: white;
-  text-align: center;
   border-radius: 5px;
   padding: 20px;
   text-align: left;
+  position: relative;
+  -webkit-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  -moz-box-shadow: 0px 40px 32px -24px rgba(115, 118, 125, 1);
+  box-shadow: 0px 40px 32px -24px var(--grayish-blue);
+}
+.karma img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
 }
 
 .karma span {
@@ -152,6 +199,7 @@ body {
 } */
 
 .attribution {
+  margin-top: 30px;
   font-size: 11px;
   text-align: center;
 }
